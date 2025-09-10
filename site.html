@@ -1,44 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos técnicos - Mario B. T. Braga</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Colégio Mario Brandão</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Slab', serif;
+      background-color: #e5f9dc;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #287b10, #3ea02d);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .logo-text {
+      font-size: 1.2em;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-size: 1.4em;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      background-color: #d16900;
+      padding: 8px 14px;
+      color: white;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    main {
+      background-color: white;
+      padding: 40px;
+      margin: 30px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #b04100;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .cursos {
+      margin-top: 30px;
+    }
+
+    .cursos h2 {
+      margin-bottom: 20px;
+    }
+
+    .cursos-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .curso-card {
+      background-color: #d6f3cd;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 200px;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      transition: transform 0.2s;
+    }
+
+    .curso-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .curso-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .curso-card .info {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .curso-card .icon {
+      font-size: 40px;
+      color: #d16900;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Cursos Técnicos</h1>
-        <p>Mario B. T. Braga</p>
-        <p><a href="#" class="link">Administração</a> <a href="#" class="link">Desenvolvimento de sistemas</a> <a href="#" class="link">Fármacia</a> <a href="#" class="link">Meio ambiente</a></p>
-    </header>
-    <picture>
-        <source media="(min-width:670px)" srcset="imagens/logo-da-escola.png">
-        <!---<img src="imagens/logo-da-escola.png" alt="Logo da escola">-->
-    </picture>
-   
-    <main>
-        <article>
-        <h2>O que é o ensino médio integrado com o técnico ?</h2>
-            <p> 
-                O Ensino Médio Integrado com o Técnico é uma modalidade de ensino que une a formação geral, voltada para todas as áreas do conhecimento, com uma formação técnica-profissional. Dessa forma, o estudante, ao mesmo tempo em que conclui o ensino médio, também recebe uma habilitação profissional, que o prepara para ingressar no mercado de trabalho logo após a conclusão dos estudos.
+
+  <header>
+    <div class="logo">
+      <img src="imagens/logo-da-escola.png" alt="logo">
+      <div class="logo-text">
+        <span>Colégio estadual</span>
+        <strong>Mario Brandão Texeira Braga</strong>
+      </div>
+    </div>
+    <nav>
+      <a href="#">Administração</a>
+      <a href="#">Desenvolvimento de Sistemas</a>
+      <a href="#">Farmácia</a>
+      <a href="#">Meio Ambiente</a>
+      <a href="#">Colaboradores</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>ENCONTRE AQUI SEU CURSO TÉCNICO</h1>
+    <p class="subtitle">O colégio Mário B.T Texeira Braga pode te ajudar a ir mais longe. Escolha sua formação ideal</p>
+
+    <h2>O QUE É O ENSINO MÉDIO TÉCNICO INTEGRADO:</h2>
+    <p>
+        O Ensino Médio Integrado com o Técnico é uma modalidade de ensino que une a formação geral, voltada para todas as áreas do conhecimento, com uma formação técnica-profissional. Dessa forma, o estudante, ao mesmo tempo em que conclui o ensino médio, também recebe uma habilitação profissional, que o prepara para ingressar no mercado de trabalho logo após a conclusão dos estudos.
                 
-                Enquanto o ensino médio regular tem como foco principal fornecer uma base ampla para que o aluno possa escolher um curso superior futuramente, o integrado combina esse objetivo com a formação prática, possibilitando ao estudante sair com uma qualificação profissional.
-                 </p>
-                 <h2>Cursos disponíveis:</h2>
-                 <h3>Administração:</h3>
-                 <p>twxto</p>
-                 <h3>Desenvolvimento de sistemas</h3>
-                 <p>O curso técnico em desenvolvimento de sistemas forma profissionais capacitados para criar, testar e manter softwares que atendem às necessidades do mercado. Durante o curso, o aluno aprende linguagens de programação, lógica de programação, banco de dados, além de noções de design e usabilidade. É um caminho prático e dinâmico, ideal para quem gosta de tecnologia e deseja entrar rapidamente no mercado de trabalho com habilidades técnicas e atualizadas. <br> <p> O curso possui 3mil horas, com 3 anos de duração.</p>
-                 </p>
-                 <h3>Fármacia</h3>
-                 <p>texto</p>
-                 <h3>Meio Ambiente</h3>
-                 <p>texto</p>
-        </article>
-    </main>
-    <footer>
-        <p> texto </p>
-    </footer>
+        Enquanto o ensino médio regular tem como foco principal fornecer uma base ampla para que o aluno possa escolher um curso superior futuramente, o integrado combina esse objetivo com a formação prática, possibilitando ao estudante sair com uma qualificação profissional.
+    </p>
+
+    <section class="cursos">
+      <h2>CURSOS DISPONÍVEIS:</h2>
+      <div class="cursos-grid">
+
+        <!-- Administração -->
+        <a class="curso-card" href="https://krackeros.github.io/SiteDaEscola/" target="_self">
+          <h3>Administração</h3>
+          <div class="info">3 ANOS<br>3MIL HORAS</div>
+          <div class="icon">👥⚙️</div>
+        </a>
+
+        <!-- Desenvolvimento de Sistemas -->
+        <a class="curso-card" href="https://www.cursosecolegiotecnicossenai.com.br/curso/tecnico-em-desenvolvimento-de-sistemas" target="_self">
+          <h3>Desenv. de Sistemas</h3>
+          <div class="info">3 ANOS<br>3MIL HORAS</div>
+          <div class="icon">💻⚙️</div>
+        </a>
+
+        <!-- Farmácia -->
+        <a class="curso-card" href="https://blog.cursoeduka.com.br/tecnico-em-farmacia-o-que-faz/" target="_self">
+          <h3>Farmácia</h3>
+          <div class="info">3 ANOS<br>3.233 HORAS</div>
+          <div class="icon">💊🧴</div>
+        </a>
+
+        <!-- Meio Ambiente -->
+        <a class="curso-card" href="https://www.guiadacarreira.com.br/cursos/curso-tecnico-em-meio-ambiente" target="_self">
+          <h3>Meio Ambiente</h3>
+          <div class="info">3 ANOS<br>3MIL HORAS</div>
+          <div class="icon">🌱🤲</div>
+        </a>
+        R. Reinaldo Meira, 1150 - Vila São Cristovão, Piraquara - PR, 83305-100<br />
+        <a href="https://maps.app.goo.gl/HMuk4H6kuRATvQwQ7" target="_self" rel="noopener noreferrer" class="google-maps">+ Ver no Google maps</a>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>
