@@ -1,5 +1,39 @@
 @charset "UTF-8";
+body {
+color: black;
+background-color: rgb(255, 255, 255);
+}
 
-UL {
-    background-color: aquamarine;
+aside {
+    
+}
+
+aside > ul {
+    background-color:rgb(121, 185, 129);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(18, 69, 45);
+height: 500px;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+nav > p {
+    text-align: center;
+     background-color: rgb(143, 224, 143);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.693);
+    width: 50px;
+    height: 18px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
 }
